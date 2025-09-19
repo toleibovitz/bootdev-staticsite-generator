@@ -4,11 +4,11 @@ class HTMLNode():
     def __init__(self, tag=None, value=None, children=None, props=None):
         self.tag = tag
         self.value = value
-        self.children = [children]
+        self.children = children
         self.props = props
 
     def __repr__(self):
-        pass
+        return f"HTMLNode({self.tag}, {self.value}, children: {self.children}, {self.props})"
 
     def to_html(self):
         raise NotImplementedError("Child class should implement this")
