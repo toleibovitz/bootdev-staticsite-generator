@@ -11,6 +11,7 @@ def main():
     TextType.TEXT,
 )
     new_nodes = split_nodes_link([node])
+    print(new_nodes)
 # [
 #     TextNode("This is text with a link ", TextType.TEXT),
 #     TextNode("to boot dev", TextType.LINK, "https://www.boot.dev"),
